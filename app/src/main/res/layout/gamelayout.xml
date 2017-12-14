@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/main_game">
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/row1">
+
+        <Button
+            android:id="@+id/button"
+            android:soundEffectsEnabled="false"
+            android:layout_width="80dp"
+            android:layout_margin="4dp"
+            android:layout_height="80dp"
+            android:background="#212121"
+            android:text=" "
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <Button
+        android:id="@+id/button2"
+            android:textSize="50sp"
+            android:layout_margin="4dp"
+            android:background="#212121"
+            android:soundEffectsEnabled="false"
+        android:layout_width="80dp"
+        android:textStyle="bold"
+        android:layout_height="80dp"
+        android:text=" " />
+
+        <Button
+            android:id="@+id/button3"
+            android:background="#212121"
+            android:layout_width="80dp"
+            android:textSize="50sp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:soundEffectsEnabled="false"
+            android:text=" "
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/row2"
+        android:layout_below="@id/row1">
+        <Button
+            android:id="@+id/button4"
+            android:layout_margin="4dp"
+            android:layout_width="80dp"
+            android:soundEffectsEnabled="false"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:background="#212121"
+            android:layout_height="80dp"
+            android:text=" " />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:soundEffectsEnabled="false"
+            android:layout_margin="4dp"
+            android:background="#212121"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text=" " />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#212121"
+            android:soundEffectsEnabled="false"
+            android:textSize="50sp"
+            android:layout_margin="4dp"
+            android:textStyle="bold"
+            android:text=" "
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/row3"
+        android:layout_below="@id/row2">
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:background="#212121"
+            android:textSize="50sp"
+            android:soundEffectsEnabled="false"
+            android:text=" "
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#212121"
+            android:layout_margin="4dp"
+            android:textSize="50sp"
+            android:text=" "
+            android:soundEffectsEnabled="false"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="80dp"
+            android:soundEffectsEnabled="false"
+            android:textSize="50sp"
+            android:layout_height="80dp"
+            android:background="#212121"
+            android:layout_margin="4dp"
+            android:textStyle="bold"
+            android:text=" " />
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn: "
+        android:textSize="30sp"
+        android:layout_margin="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/main_game"
+         />
+    <!--
+    <Button
+        android:id="@+id/playAgain"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/main_game"
+        android:soundEffectsEnabled="false"
+        android:layout_margin="40dp"
+        android:background="#4CAF50"
+        android:text="Play Again!"
+        android:fontFamily="serif-monospace"/>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/playAgaintv"
+        android:layout_height="wrap_content"
+        android:text="PLAY AGAIN?"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/main_game"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"/>
+    <ImageView
+        android:visibility="invisible"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:soundEffectsEnabled="false"
+        android:id="@+id/playAgain"
+        android:layout_below="@id/playAgaintv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/play"/>
+</RelativeLayout>
